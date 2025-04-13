@@ -1,0 +1,10 @@
+{
+    "require": {
+        "chillerlan/php-qrcode": "^5.0",
+        "cboden/ratchet": "^0.4.4",
+        "textalk/websocket": "^1.6",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

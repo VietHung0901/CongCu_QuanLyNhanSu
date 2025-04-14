@@ -1,0 +1,103 @@
+/* detail_workschedule.css */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+.day-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.day-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.day-header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: 1px solid #0056b3;
+}
+
+.day-card.day-off .day-header,
+.day-card.weekend-off .day-header {
+    background: #6c757d;
+    border-bottom: 1px solid #5a6268;
+}
+
+.day-num {
+    display: block;
+}
+
+.day-name {
+    font-size: 0.75em;
+    opacity: 0.8;
+}
+
+.day-content {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shift-info {
+    margin-bottom: 5px;
+}
+
+.shift-time {
+    display: block;
+    font-weight: 500;
+    color: #343a40;
+    font-size: 0.9em;
+}
+
+.full_name {
+    display: inline-block;
+    background: #e9ecef;
+    color: #495057;
+    padding: 4px 8px;
+    margin: 2px 0;
+    border-radius: 12px;
+    font-size: 0.85em;
+}
+
+.edit-btn {
+    display: inline-block;
+    padding: 4px 8px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 0.8em;
+    text-align: center;
+    transition: all 0.2s ease;
+    align-self: flex-end;
+}
+
+.edit-btn:hover {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+.text-muted {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+
+
